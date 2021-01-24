@@ -16,8 +16,6 @@
     <p>Happy to see you again!</p>
     {% endif %}
 </div>
-<p>Дата и местное время: {{ moment(current_time).format('LLL') }}.</p>
-<p>That was {{ moment(current_time).fromNow(refresh=True) }}.</p>
 {{ wtf.quick_form(form) }} <!-- Принимает объект form и отображает форму, используя стили по умолчанию -->
 {% endblock %}
 
